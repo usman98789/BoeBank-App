@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.activities.LoginActivity">
+
+    <TextView
+        android:id="@+id/loginStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingBottom="20sp"
+        android:paddingTop="20sp"
+        android:text="@string/status_default"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_text"
+        android:onClick="loginToAccount"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="334dp"
+        android:layout_above="@+id/initializeDbBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:id="@+id/userIdField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_prompt"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="170dp"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/userPasswordField"
+        android:layout_alignStart="@+id/userPasswordField" />
+
+    <EditText
+        android:id="@+id/userPasswordField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password_prompt"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="253dp"
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/loginBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/initializeDbBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initDB"
+        android:onClick="initializeDatabase"
+        android:layout_above="@+id/loginStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.activities.Authenticate">
+
+    <TextView
+        android:id="@+id/authenticateCustomerHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Authenticate Customer"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/customerIdInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Enter Customer ID"
+        android:inputType="number"
+        android:layout_below="@+id/authenticateCustomerHeader"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/customerPwdInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/customerIdInput"
+        android:layout_below="@+id/customerIdInput"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/password_prompt"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/customerAuthenticateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerPwdInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Authenticate" />
+</RelativeLayout>

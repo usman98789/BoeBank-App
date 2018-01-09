@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.activities">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BoeBank"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".AtmActivity"/>
+        <activity
+            android:name=".atmActivities.withdrawalActivity"
+            android:label="@string/title_activity_withdrawal">
+        </activity>
+        <activity
+            android:name=".atmActivities.accountViewActivity"
+            android:label="@string/accountOverview">
+        </activity>
+
+        <activity
+            android:name=".AdminMenuActivity"
+            android:label="@string/title_activity_admin_menu"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Authenticate"/>
+        <activity android:name=".TTnewcustomer"/>
+        <activity android:name=".newAccount"/>
+        <activity android:name=".giveInterest"/>
+        <activity android:name=".TellerTerminalActivity"/>
+        <activity android:name=".CustomerAccountsInfo"/>
+        <activity android:name=".ViewAnyCustBal"/>
+        <activity android:name=".UpdateCustomerInfo"/>
+        <activity android:name=".ViewUserInbox"/>
+        <activity android:name=".CreateMessage"/>
+        <activity
+            android:name=".atmActivities.depositActivity"
+            android:label="@string/title_activity_deposit">
+        </activity>
+        <activity android:name=".Tellerwithdrawl" />
+        <activity android:name=".Tellerdeposit" />
+    </application>
+
+</manifest>

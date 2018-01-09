@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.activities.atmActivities.withdrawalActivity">
+
+    <TextView
+        android:id="@+id/atm_withdraw_selected_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="@string/selected_account_default"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/atm_withdraw_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/withdraw_hint"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/atm_withdraw_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="makeWithdrawal"
+        android:text="@string/make_withdrawal"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/content_withdrawal"/>
+    </ScrollView>
+
+</LinearLayout>

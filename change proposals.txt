@@ -1,0 +1,19 @@
+List of proposed changes by person:
+
+Austin
+1. Move shared variables and methods up to superclass to avoid repitition
+2. SavingsAccount should become a subclass of TaxFreeSavingsAccount (By Liskov Substitution principle, SavingsAccount has more things than TFSA - a tax rate)
+3. Seperate related tasks in ATM, TellerTerminal, and Bank classes into categories such as getters and setter
+
+
+Jason
+
+
+
+Richard
+
+
+
+Usman
+
+

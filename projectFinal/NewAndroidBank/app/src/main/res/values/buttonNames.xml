@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="initDB">Initialize Database</string>
+    <string name="logout">Log Out</string>
+
+    <string name="accountOverview">Account Overview</string>
+    <string name="makeDeposit">Make a Deposit</string>
+    <string name="makeWithdraw">Make a Withdrawal</string>
+</resources>

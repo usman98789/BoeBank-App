@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.activities.newAccount">
+
+    <EditText
+        android:id="@+id/accountNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Enter new account name"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="Choose one of the Accounts Below"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finished"
+        android:layout_alignEnd="@+id/accountNameField"
+        android:layout_alignStart="@+id/accountNameField"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Enter starting balance"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="16sp" />
+
+    <RadioGroup
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/cheqBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioGroup"
+            android:text="Chequing" />
+
+        <RadioButton
+            android:id="@+id/savingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cheqBtn"
+            android:text="Savings" />
+
+        <RadioButton
+            android:id="@+id/restrictedSavingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/savingsBtn"
+            android:layout_toStartOf="@+id/finished"
+            android:text="Restricted Savings" />
+
+
+        <RadioButton
+            android:id="@+id/tfsaBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TFSA" />
+
+        <RadioButton
+            android:id="@+id/loanBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/restrictedSavingsBtn"
+            android:layout_below="@+id/radioButton4"
+            android:text="Loan" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/finished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp"
+        android:text="DONE"
+        android:onClick="newAccount"/>
+
+    <TextView
+        android:id="@+id/newAccDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="(Enter a negative number into balance if you chose Loan)" />
+
+</RelativeLayout>

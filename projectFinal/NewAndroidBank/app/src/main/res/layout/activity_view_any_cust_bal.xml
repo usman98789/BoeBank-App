@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.activities.ViewAnyCustBal">
+
+    <TextView
+        android:id="@+id/totalCustBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_above="@+id/getTotalBalBtn"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/custId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter ID"
+        android:inputType="number"
+        android:layout_below="@+id/totalBalCustHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:id="@+id/getTotalBalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Total Balance"
+        android:onClick="getTotalBalance"
+        android:layout_alignTop="@+id/custId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp" />
+
+    <TextView
+        android:id="@+id/totalBalCustHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Get Total Balance for a Customer"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+</RelativeLayout>

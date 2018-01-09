@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.activities.UpdateCustomerInfo">
+
+    <TextView
+        android:id="@+id/updateCustInfoHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:text="Update Customer Info"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/updateNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="New Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/updateAgeField"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/updateAddressField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="New Address"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/updateCustInfoHeader"
+        android:layout_alignStart="@+id/updateAgeField" />
+
+    <EditText
+        android:id="@+id/updateAgeField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:hint="New Age"
+        android:inputType="number"
+        android:layout_below="@+id/updateAddressField"
+        android:layout_alignStart="@+id/updateNameField" />
+
+    <Button
+        android:id="@+id/updateInfoChangesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save changes"
+        android:onClick="updateCurrCustomerInfo"
+        android:layout_below="@+id/updateNameField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        />
+
+    <TextView
+        android:id="@+id/updateDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateInfoChangesBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Fill in one or more fields." />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:fillViewport="false"
+            android:orientation="vertical"
+            tools:context="com.activities.AtmActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status_default"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/viewAccounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="viewAccounts"
+        android:text="@string/accountOverview"/>
+
+    <Button
+        android:id="@+id/makeDeposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deposit"
+        android:text="@string/makeDeposit"/>
+
+    <Button
+        android:id="@+id/makeWithdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/makeWithdraw"
+        android:onClick="withdraw"/>
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:onClick="logout"/>
+</LinearLayout>
